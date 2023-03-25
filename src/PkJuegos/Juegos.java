@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Juegos {
 
-    static String titulo;
+    String titulo;
 
-    static String clasificacion;
+    String clasificacion;
 
     String genero;
 

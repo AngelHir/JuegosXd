@@ -3,9 +3,9 @@ package PkJuegos;
 
 public class JuegoMovil extends Juegos{
 
-    static String pantalla_tactil;
+    String pantalla_tactil;
 
-    static String portabilidad;
+    String portabilidad;
 
     JuegoMovil(String titulo, String clasificacion, String genero, String version, String desarrollardor, String plataforma, String tipo_conexion,
                String idioma, int anio, double precio, double calificacion,String pantalla_tactil, String portabilidad) {
