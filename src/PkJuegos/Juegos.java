@@ -1,16 +1,16 @@
 package PkJuegos;
 
-import java.util.Date;
+import java.util.Scanner;
 
 public class Juegos {
 
-    String titulo;
+    static String titulo;
 
-    String clasificacion;
+    static String clasificacion;
 
     String genero;
 
-    Date anio;
+    int anio;
 
     double precio;
 
@@ -28,9 +28,9 @@ public class Juegos {
 
 
     Juegos(String titulo, String clasificacion, String genero, String version, String desarrollardor, String plataforma, String tipo_conexion, String idioma,
-           Date anio, double precio, double calificacion){
+           int anio, double precio, double calificacion){
 
-        this.titulo=titulo;
+        this.titulo =titulo;
         this.clasificacion=clasificacion;
         this.genero=genero;
         this.version=version;
@@ -45,11 +45,12 @@ public class Juegos {
     }
 
 
-    public String getTitulo() {
+
+    public  String getTitulo() {
         return titulo;
     }
 
-    public String getClasificacion() {
+    public  String getClasificacion() {
         return clasificacion;
     }
 
@@ -57,7 +58,7 @@ public class Juegos {
         return genero;
     }
 
-    public Date getAnio() {
+    public int getAnio() {
         return anio;
     }
 
@@ -128,4 +129,67 @@ public class Juegos {
     public void setVersion(String version) {
         this.version = version;
     }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
+
+    public static JuegoMovil agregarDatos(){
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese los siguientes datos juego movil:");
+
+        System.out.print("Titulo : ");
+        String titulo = sc.nextLine();
+
+        System.out.print("Clasificacion: ");
+        String clasificacion = sc.nextLine();
+
+        System.out.print("Genero: ");
+        String genero = sc.nextLine();
+
+        System.out.print("Version: ");
+        String version = sc.nextLine();
+
+        System.out.print("Desarrollador: ");
+        String desarrollador = sc.nextLine();
+
+        System.out.print("Plataforma: ");
+        String plataforma = sc.nextLine();
+
+        System.out.print("Tipo de conexion: ");
+        String tipo_conexion = sc.nextLine();
+
+        System.out.print("Idioma: ");
+        String idioma = sc.nextLine();
+
+        System.out.print("Calificación: ");
+        double calificacion = sc.nextDouble();
+        sc.nextLine();
+
+        System.out.print("Precio: ");
+        double precio = sc.nextDouble();
+        sc.nextLine();
+
+        System.out.print("Pantalla tactil: ");
+        String pantalla_tactil = sc.nextLine();
+
+        System.out.print("Portabilidad: ");
+        String portabilidad = sc.nextLine();
+
+
+        System.out.print("Año: ");
+        int anio = sc.nextInt();
+        sc.nextLine();
+
+        JuegoMovil juegoMovil= new JuegoMovil(titulo,clasificacion,genero,version,desarrollador,plataforma,tipo_conexion,idioma,
+                anio,precio,calificacion,pantalla_tactil,portabilidad);
+
+        return juegoMovil;
+    }
+
+
+
 }
