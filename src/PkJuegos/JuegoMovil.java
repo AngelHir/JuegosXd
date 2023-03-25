@@ -33,4 +33,19 @@ public class JuegoMovil extends Juegos{
     }
 
 
+   /* public static void mostrarDatos(){
+        System.out.println("Titulo: "+ getTitulo()+
+                "\nClasificacion: "+ getClasificacion()+
+                "\nGenero: "+ getGenero()+
+                "\nVersion: "+getVersion()+
+                "\nDesarrollador: "+getDesarrollardor()+
+                "\nPlataforma: "+getPlataforma()+
+                "\nTipo de conexion: "+getTipo_conexion()+
+                "\nIdioma: "+getIdioma()+
+                "\nAño: "+getAnio()+
+                "\nPrecio: "+getPrecio()+
+                "\nCalificacion: "+getCalificacion()+
+                "\nPantalla tactil: "+pantalla_tactil+
+                "\nPortabilidad: " );
+    }*/
 }

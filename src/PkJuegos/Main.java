@@ -24,7 +24,6 @@ public class Main {
 
                     break;
                 case 2:
-                    JuegoMovil.mostrarDatos();
                     break;
                 case 3:
                     break;
